@@ -1,7 +1,16 @@
 <template>
-  <v-toolbar app flat>
-    <v-toolbar-side-icon class="hidden-md-and-up" @click="toggleDrawer" />
-    <v-container mx-auto py-0>
+  <v-toolbar
+    app
+    flat
+  >
+    <v-toolbar-side-icon
+      class="hidden-md-and-up"
+      @click="toggleDrawer"
+    />
+    <v-container
+      mx-auto
+      py-0
+    >
       <v-layout>
         <v-img
           :src="require('@/assets/logo.png')"
@@ -16,7 +25,9 @@
           :key="i"
           class="ml-0 hidden-sm-and-down"
           flat
-        >{{ link.text }}</v-btn>
+        >
+          {{ link.text }}
+        </v-btn>
       </v-layout>
     </v-container>
   </v-toolbar>
@@ -24,22 +35,22 @@
 
 <script>
 // Utilities
-import { mapGetters, mapMutations } from "vuex";
+  import { mapGetters, mapMutations } from 'vuex'
 
-export default {
-  computed: {
-    ...mapGetters(["links"])
-  },
+  export default {
+    computed: {
+      ...mapGetters(['links'])
+    },
 
-  methods: {
-    ...mapMutations(["toggleDrawer"]),
-    onClick(e, item) {
-      e.stopPropagation();
+    methods: {
+      ...mapMutations(['toggleDrawer']),
+      onClick (e, item) {
+        e.stopPropagation()
 
-      if (item.to || !item.href) return;
+        if (item.to || !item.href) return
 
-      this.$vuetify.goTo(item.href);
+        this.$vuetify.goTo(item.href)
+      }
     }
   }
-};
 </script>

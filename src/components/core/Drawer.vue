@@ -1,7 +1,17 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app dark temporary>
+  <v-navigation-drawer
+    v-model="drawer"
+    app
+    dark
+    temporary
+  >
     <v-list>
-      <v-list-tile v-for="(link, i) in links" :key="i" :to="link.to" :href="link.href">
+      <v-list-tile
+        v-for="(link, i) in links"
+        :key="i"
+        :to="link.to"
+        :href="link.href"
+      >
         <v-list-tile-title v-text="link.text" />
       </v-list-tile>
     </v-list>
@@ -10,39 +20,39 @@
 
 <script>
 // Utilities
-import { mapGetters, mapMutations } from "vuex";
+  import { mapGetters, mapMutations } from 'vuex'
 
-export default {
-  name: "CoreDrawer",
+  export default {
+    name: 'CoreDrawer',
 
-  computed: {
-    ...mapGetters(["links"]),
-    drawer: {
-      get() {
-        return this.$store.state.drawer;
-      },
-      set(val) {
-        this.setDrawer(val);
+    computed: {
+      ...mapGetters(['links']),
+      drawer: {
+        get () {
+          return this.$store.state.drawer
+        },
+        set (val) {
+          this.setDrawer(val)
+        }
       }
-    }
-  },
+    },
 
-  methods: {
-    ...mapMutations(["setDrawer"]),
-    onClick(e, item) {
-      e.stopPropagation();
+    methods: {
+      ...mapMutations(['setDrawer']),
+      onClick (e, item) {
+        e.stopPropagation()
 
-      if (item.to === "/") {
-        this.$vuetify.goTo(0);
-        this.setDrawer(false);
-        return;
+        if (item.to === '/') {
+          this.$vuetify.goTo(0)
+          this.setDrawer(false)
+          return
+        }
+
+        if (item.to || !item.href) return
+
+        this.$vuetify.goTo(item.href)
+        this.setDrawer(false)
       }
-
-      if (item.to || !item.href) return;
-
-      this.$vuetify.goTo(item.href);
-      this.setDrawer(false);
     }
   }
-};
 </script>
