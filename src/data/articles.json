@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Be Resolution",
+    "responsavel": "Juraci de Oliveira",
+    "categoria": "Software",
+    "rua": "Av. Arquiteto Nildo Ribeiro da Rocha, 3523",
+    "cep": "87060-390",
+    "info": "A BeResolutuion é uma empresa focada no ramo de software em maringa, seu produto destaque é o Sige",
+    "img": "beresolution.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.33949565144!2d-51.944267184675134!3d-23.448215484739272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a62e43307%3A0xc45f5ed6ce16bf0e!2sBe%20Resolution%20Softwares!5e0!3m2!1spt-BR!2sbr!4v1578258712302!5m2!1spt-BR!2sbr"
+  },
+  {
+    "title": "Starbucks",
+    "responsavel": "Cezar Oliveira",
+    "categoria": "Café",
+    "info": "A Starbucks Corporation é uma empresa americana de café e uma cadeia de cafeterias. A Starbucks foi fundada em Seattle, Washington, em 1971. Desde o início de 2019, a empresa opera mais de 30.000 locais em todo o mundo.",
+    "img": "starbucks.jpg"
+  }
+]
