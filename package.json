@@ -2,14 +2,14 @@
   "name": "@vuetify-theme/blog",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
-    "deploy": "yarn build && now && now alias",
-    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
