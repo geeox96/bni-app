@@ -2,20 +2,17 @@
   "name": "@vuetify-theme/blog",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.15.3"
-  },
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "node server.js"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "express": "^4.17.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
-    "vuetify": "1.5.1",
+    "vuetify": "^1.5.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
