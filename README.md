@@ -14,7 +14,7 @@
 	<br>
 	<br>
 </div>
- ## Configuração
+ ##Configuração
 
   - Para adicionar uma nova empresa vá para src/data/empresas.json
   - No campo "secao" digite "construcao" para incluir uma empresa na aba de Construção, "mkteventos" para Marketing E Eventos, "servico" para serviços empresariais, "saude" para Saúde e bem-estar e "consultoria" para Consultoria
