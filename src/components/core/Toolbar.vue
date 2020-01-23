@@ -23,8 +23,9 @@
         <v-btn
           v-for="(link, i) in links"
           :key="i"
-          class="ml-0 hidden-sm-and-down"
+          class="ml-1 mr-1 pl-1 pr-1 hidden-sm-and-down"
           flat
+          @click="irURL(link)"
         >
           {{ link.text }}
         </v-btn>
@@ -34,22 +35,44 @@
 </template>
 
 <script>
-// Utilities
-  import { mapGetters, mapMutations } from 'vuex'
+  import { mapMutations } from 'vuex'
 
   export default {
-    computed: {
-      ...mapGetters(['links'])
+    data () {
+      return {
+        links: [
+          {
+            text: 'Inicio',
+            to: '/'
+          },
+          {
+            text: 'Construção',
+            to: '/construcao'
+          },
+          {
+            text: 'Marketing e Eventos',
+            to: '/mkteventos'
+          },
+          {
+            text: 'Serviços empresariais',
+            to: '/servico'
+          },
+          {
+            text: 'Saúde e bem-estar',
+            to: '/saude'
+          },
+          {
+            text: 'Consultoria',
+            to: '/consultoria'
+          }
+        ]
+      }
     },
 
     methods: {
       ...mapMutations(['toggleDrawer']),
-      onClick (e, item) {
-        e.stopPropagation()
-
-        if (item.to || !item.href) return
-
-        this.$vuetify.goTo(item.href)
+      irURL (item) {
+        this.$router.push({ path: item.to })
       }
     }
   }

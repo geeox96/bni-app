@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Be Resolution",
+    "responsavel": "Juraci de Oliveira",
+    "bio": "Escreva sobre a Juraci",
+    "categoria": "Consultoria",
+    "secao": "consultoria",
+    "rua": "Av. Arquiteto Nildo Ribeiro da Rocha, 3523",
+    "bairro": "Zona 7",
+    "cep": "87060-390",
+    "info": "A BeResolutuion é uma empresa focada no ramo de software em maringa, seu produto destaque é o Sige",
+    "img": "beresolution.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.33949565144!2d-51.944267184675134!3d-23.448215484739272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a62e43307%3A0xc45f5ed6ce16bf0e!2sBe%20Resolution%20Softwares!5e0!3m2!1spt-BR!2sbr!4v1578258712302!5m2!1spt-BR!2sbr"
+  },
+  {
+    "title": "Empresa Teste de Construção",
+    "responsavel": "João Carlos Nascimento",
+    "bio": "Escreva sobre o João",
+    "categoria": "Construção",
+    "secao": "construcao",
+    "rua": "Av. Arquiteto Nildo Ribeiro da Rocha, 3523",
+    "bairro": "Zona 7",
+    "cep": "87060-390",
+    "info": "A Empresa de construção é uma empresa",
+    "img": "construcao.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.33949565144!2d-51.944267184675134!3d-23.448215484739272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a62e43307%3A0xc45f5ed6ce16bf0e!2sBe%20Resolution%20Softwares!5e0!3m2!1spt-BR!2sbr!4v1578258712302!5m2!1spt-BR!2sbr"
+  },
+  {
+    "title": "Bus Monkey",
+    "responsavel": "Marcelo Costa",
+    "bio": "Escreva sobre o Marcelo",
+    "categoria": "Marketing",
+    "secao": "mkteventos",
+    "rua": "Av. Dr. Gastão Vidigal, 1355",
+    "bairro": "Zona 8",
+    "cep": "87050-440",
+    "info": "A Empresa Bus Monkey é uma empresa de marketing geral",
+    "img": "busmonkey.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7320.849675620928!2d-51.915397974986185!3d-23.44513538896267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0999183c30f%3A0x2e6925d8ff1e8930!2sAg%C3%AAncia%20Bus%20Monkey!5e0!3m2!1spt-BR!2sbr!4v1579753156544!5m2!1spt-BR!2sbr"
+  },
+  {
+    "title": "Empresa Teste de Serviços Empresariais",
+    "responsavel": "Lucas de Araujo",
+    "bio": "Escreva sobre o Lucas",
+    "categoria": "Serviços Empresariais",
+    "secao": "servico",
+    "rua": "Av. Arquiteto Nildo Ribeiro da Rocha, 3523",
+    "bairro": "Zona 8",
+    "cep": "87060-390",
+    "info": "A Empresa de serviço é uma empresa",
+    "img": "servicos.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.33949565144!2d-51.944267184675134!3d-23.448215484739272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a62e43307%3A0xc45f5ed6ce16bf0e!2sBe%20Resolution%20Softwares!5e0!3m2!1spt-BR!2sbr!4v1578258712302!5m2!1spt-BR!2sbr"
+  },
+  {
+    "title": "Empresa Teste de Saúde",
+    "responsavel": "Gabriela Thome",
+    "bio": "Escreva sobre a Gabriela",
+    "categoria": "Saúde e bem-estar",
+    "secao": "saude",
+    "rua": "Av. Arquiteto Nildo Ribeiro da Rocha, 3523",
+    "bairro": "Zona 8",
+    "cep": "87060-390",
+    "info": "A Empresa de serviço é uma empresa",
+    "img": "saude.jpg",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.33949565144!2d-51.944267184675134!3d-23.448215484739272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a62e43307%3A0xc45f5ed6ce16bf0e!2sBe%20Resolution%20Softwares!5e0!3m2!1spt-BR!2sbr!4v1578258712302!5m2!1spt-BR!2sbr"
+  }
+]

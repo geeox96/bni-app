@@ -19,14 +19,43 @@
 </template>
 
 <script>
-// Utilities
-  import { mapGetters, mapMutations } from 'vuex'
+  import { mapMutations } from 'vuex'
 
   export default {
     name: 'CoreDrawer',
 
+    data () {
+      return {
+        links: [
+          {
+            text: 'Inicio',
+            to: '/'
+          },
+          {
+            text: 'Construção',
+            to: '/construcao'
+          },
+          {
+            text: 'Marketing e Eventos',
+            to: '/mkteventos'
+          },
+          {
+            text: 'Serviços empresariais',
+            to: '/servico'
+          },
+          {
+            text: 'Saúde e bem-estar',
+            to: '/saude'
+          },
+          {
+            text: 'Consultoria',
+            to: '/consultoria'
+          }
+        ]
+      }
+    },
+
     computed: {
-      ...mapGetters(['links']),
       drawer: {
         get () {
           return this.$store.state.drawer
@@ -38,21 +67,11 @@
     },
 
     methods: {
-      ...mapMutations(['setDrawer']),
-      onClick (e, item) {
-        e.stopPropagation()
+      irURL (item) {
+        this.$router.push({ path: item.to })
+      },
 
-        if (item.to === '/') {
-          this.$vuetify.goTo(0)
-          this.setDrawer(false)
-          return
-        }
-
-        if (item.to || !item.href) return
-
-        this.$vuetify.goTo(item.href)
-        this.setDrawer(false)
-      }
+      ...mapMutations(['setDrawer'])
     }
   }
 </script>

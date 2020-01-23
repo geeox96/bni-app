@@ -10,7 +10,7 @@
       href="#!"
     >
       <v-img
-        :src="require(`@/assets/articles/${value.img}`)"
+        :src="require(`@/assets/empresas/${value.img}`)"
         height="100%"
         gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
       >
@@ -64,17 +64,32 @@
         >
           {{ informacoes.title }}
         </v-card-title>
-
         <v-card-text>
-          <div class="my-2 title">
+          <div class="mt-2 my-3 title">
+            Responsavel:
+          </div>
+          <span class="title font-weight-light">
+            {{ informacoes.responsavel }}
+          </span>
+          <span class="ml-2">
+            -
+          </span>
+          <span class="ml-2">
+            {{ informacoes.bio }}
+          </span>
+          <v-divider />
+          <div class="my-3 title">
             Endereço:
           </div>
           <span>{{ informacoes.rua }}</span>
           <span class="ml-4">
+            Bairro: {{ informacoes.bairro }}
+          </span>
+          <span class="ml-4">
             CEP: {{ informacoes.cep }}
           </span>
           <v-divider />
-          <div class="my-2 title">
+          <div class="my-3 title">
             Descrição:
           </div>
           <span>{{ informacoes.info }}</span>

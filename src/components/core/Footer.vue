@@ -38,11 +38,11 @@
     data: () => ({
       items: [
         {
-          href: '#!',
+          href: 'http://instagram.com/bninorteparana/',
           icon: 'mdi-instagram'
         },
         {
-          href: '#!',
+          href: 'http://facebook.com/bninopr/',
           icon: 'mdi-facebook'
         }
       ]

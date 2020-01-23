@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    articles: require('@/data/articles.json'),
+    empresa: require('@/data/empresas.json'),
     drawer: false,
     items: [
       {
@@ -18,13 +18,13 @@ export default new Vuex.Store({
     categories: state => {
       const categories = []
 
-      for (const article of state.articles) {
+      for (const empresa of state.empresa) {
         if (
-          !article.categoria ||
-          categories.find(category => category.text === article.categoria)
+          !empresa.categoria ||
+          categories.find(category => category.text === empresa.categoria)
         ) continue
 
-        const text = article.categoria
+        const text = empresa.categoria
 
         categories.push({
           text,

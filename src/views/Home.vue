@@ -1,6 +1,15 @@
 <template>
   <div id="home">
-    <articles />
+    <banner />
+    <div class="text-xs-center">
+      <v-btn
+        large
+        color="primary"
+        @click="irEmpresas"
+      >
+        Ver todas empresas
+      </v-btn>
+    </div>
     <subscribe />
   </div>
 </template>
@@ -10,8 +19,14 @@
     name: 'Home',
 
     components: {
-      Articles: () => import('@/components/home/Articles'),
+      Banner: () => import('@/components/home/Banner'),
       Subscribe: () => import('@/components/home/Subscribe')
+    },
+
+    methods: {
+      irEmpresas () {
+        this.$router.push({ path: '/empresas' })
+      }
     }
   }
 </script>

@@ -6,7 +6,7 @@
       </v-flex>
 
       <feed-card
-        v-for="(article, i) in paginatedArticles"
+        v-for="(article, i) in paginatedEmpresas"
         :key="article.title"
         :size="layout[i]"
         :value="article"
@@ -53,7 +53,6 @@
 </template>
 
 <script>
-// Utilities
   import { mapState } from 'vuex'
 
   export default {
@@ -65,19 +64,34 @@
 
     data: () => ({
       layout: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6],
-      page: 1
+      page: 1,
+      listagem: []
     }),
 
+    created () {
+      let secao = this.$router.app._router.currentRoute.path.toLowerCase()
+      secao = secao.substring(1)
+      if (secao === 'empresas') {
+        this.listagem = this.empresa
+      } else {
+        this.listagem = this.empresa.filter(empresa => {
+          if (empresa.secao === secao) return empresa
+        })
+      }
+    },
+
     computed: {
-      ...mapState(['articles']),
+      ...mapState(['empresa']),
+
       pages () {
-        return Math.ceil(this.articles.length / 11)
+        return Math.ceil(this.listagem.length / 11)
       },
-      paginatedArticles () {
+
+      paginatedEmpresas () {
         const start = (this.page - 1) * 11
         const stop = this.page * 11
 
-        return this.articles.slice(start, stop)
+        return this.listagem.slice(start, stop)
       }
     },
 
